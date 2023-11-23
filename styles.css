@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.number-clipboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.number-clipboard button {
+  background-color: #2a6f97;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.number-clipboard button:hover {
+  background-color: #b3d3e5;
+  color: #000000;
+
+}
+
+.number {
+  font-size: 30px;
+}
+
+.wrapper {
+  font-family: 'Oswald', Arial, Helvetica;
+  letter-spacing: 0.075em;
+  text-align: center;
+}
+
+.image-cropper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px auto -10px;
+}
+
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+h1,
+h2,
+h2 a {
+  color: #bbb;
+  font-size: 1rem;
+  font-weight: 200;
+  border-color: transparent;
+  line-height: 1.25;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+h1 {
+  color: #000;
+  font-size: 1.25rem;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.links {
+  width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.links .link {
+  display: block;
+  width: 100%;
+  margin: 0 auto 10px;
+  color: #fff;
+  border: 2px solid #2a6f97;
+  background-color: #2a6f97;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
+.links .link:hover {
+  transition: all 0.1s ease-in-out;
+  color: #000;
+  background-color: transparent;
+}

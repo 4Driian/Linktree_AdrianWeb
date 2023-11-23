@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Adrian LinkTree</title>
+</head>
+<body>
+  
+<div class="wrapper">
+  
+  <div class="image-cropper">
+    <img src="img/image-profile.jpg" class="rounded" />
+  </div>
+  
+  <h3>Adrián Zúñiga Pérez</h3>  
+  
+  <div class="links">
+    <a href="https://www.linkedin.com/in/az-dev/" class="link">Linkedin</a>
+    <a href="https://github.com/4Driian" class="link">GitHub</a>
+    <a href="mailto:adrian.web.md@gmail.com" class="link">Email</a>
+    <a href="https://portafolio-eosin-tau.vercel.app/" class="link">Website</a>
+    <div class="number-clipboard">
+      <p class="number" id="phoneNumber">+506 8523-5037</p>
+      <button onclick="copyToClipboard('phoneNumber')" class="copyButton">Copy Number</button>
+    </div>
+  </div>
+  
+</div>
+
+<script>
+function copyToClipboard(elementId) {
+    var copyText = document.getElementById(elementId);
+
+    var range = document.createRange();
+    range.selectNode(copyText);
+    window.getSelection().addRange(range);
+
+    document.execCommand("copy");
+
+    alert("Phone number copied to clipboard: " + copyText.textContent);
+
+    window.getSelection().removeAllRanges();
+}
+</script>
+
+</body>
+</html>
